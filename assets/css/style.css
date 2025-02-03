@@ -14,6 +14,11 @@
     max-width: 1600px;
     margin: 0 auto;
 }
+@media screen and (max-width: 1700px){
+    .container{
+        margin: 0 40px;
+    }
+}
 /*Header Style*/
 header{
     z-index: 999;
@@ -67,6 +72,7 @@ nav a:hover{
     background-position: right;
 }
 .advantages-box{
+    max-width: 30%;
     padding-top: 10%;
     padding-bottom: 2%;
     color: #F1F1F1;
@@ -75,7 +81,6 @@ nav a:hover{
     font-family: Prata;
 }
 .head-advantages{
-    max-width: 30%;
     font-family: Prata;
 }
 .head-advantages h1{
@@ -121,6 +126,9 @@ nav a:hover{
     font-size: 40px;
     font-weight: 400;
 }
+.order-btn-box{
+    margin-top: 32px;
+}
 .order-btn{
     font-family: Arial;
     transition: .3s linear;
@@ -137,6 +145,102 @@ nav a:hover{
 }
 .order-btn:hover{
     background-color: #EFCFAD;
+}
+@media screen and (max-width: 1600px) {
+    .advantages-box{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 1065px){
+    .head-advantages h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .head-advantages h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .advantages-list li{
+        font-size: 16px;
+        padding-left: 35px;
+    }
+    .advantages-list li span{
+        font-size: 25px;
+    }
+    .advantages-list li::before{
+        top: 2px;
+        width: 25px;
+        height: 25px
+    }
+    .order-btn{
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+    .title-company {
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 1024px){
+    header nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    .head-advantages h1 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .head-advantages h2 {
+        font-size: 19px;
+        line-height: 20px;
+    }
+    .advantages-list li span {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner-section{
+        background-image: none;
+    }
+    .advantages-box {
+        max-width: 100%;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+}
+@media screen and (max-width: 475px){
+    header{
+        padding: 5px 0;
+    }
+    .title-company h2 {
+        font-size: 26px;
+    }
+    .advantages-box{
+        padding-top: 15%;
+    }
+    .head-advantages h1 {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 400px){
+    .advantages-box {
+        padding-top: 25%;
+    }
+    .head-advantages h1 {
+        font-size: 24px;
+    }
+    .advantages-list li {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .advantages-list li::before {
+        top: 1px;
+        width: 16px;
+        height: 16px;
+    }
+    .advantages-list li span {
+        font-size: 16px;
+    }
 }
 /*END Banner section Style*/
 
@@ -193,6 +297,44 @@ nav a:hover{
     width: -webkit-fill-available;
     text-align: center;
     padding: 32px 0;
+}
+@media screen and (max-width: 1400px){
+    .order-section {
+        grid-template-columns: 1fr 60% 1fr;
+    }
+}
+@media screen and (max-width: 991px){
+    .order-section {
+        padding-top: 0px;
+        grid-template-columns: 1fr;
+    }
+    .left-ph-order,
+    .right-ph-order{
+        display: none;
+    }
+}
+@media screen and (max-width: 475px){
+    .order-content li{
+        font-size: 19px;
+        line-height: 26px;
+        padding-left: 60px;
+    }
+    .order-content ul li::before {
+        width: 45px;
+        height: 45px;
+    }
+    .order-content .order-btn{
+        padding: 16px 0;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 340px){
+    .order-content li {
+        padding-left: 0;
+    }
+    .order-content ul li::before{
+        display: none;
+    }
 }
 /*END Order section Style*/
 
@@ -280,6 +422,67 @@ label[for="privacy_policy"]{
     position: relative;
     top: 129px;
     width: 85%;
+}
+@media screen and (max-width: 1440px){
+    .form-box .form-wrapp {
+        max-width: 35%;
+    }
+}
+@media screen and (max-width: 1230px){
+    .form-box {
+        background-position: 120px 0;
+    }
+    .box-img-women{
+        right: -25px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .form-box .form-wrapp {
+        max-width: 40%;
+    }
+    .form-box .form-wrapp h3{
+        font-size: 32px;
+        padding-bottom: 15px;
+    }
+    .box-img-women {
+        right: -140px;
+    }
+    .box-img-women img{
+        top: 100px;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .form-box {
+        background-position: 0px 0;
+    }
+    .form-box .form-wrapp button{
+        padding: 16px 0;
+        font-size: 18px;
+    }
+    .form-box .form-wrapp input:not(#privacy_policy){
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+    .form-box .form-wrapp #privacy_policy{
+        width: 16px;
+        height: 16px;
+    }
+    label[for="privacy_policy"]{
+        margin-left: 5px;
+        font-size: 16px;
+    }
+    .box-img-women img{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 940px){
+    .form-box {
+        background-position: -100px 0;
+    }
+    .box-img-women {
+        right: -270px;
+    }
 }
 /*END Form section Style*/
 
