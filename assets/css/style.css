@@ -16,6 +16,8 @@
 }
 /*Header Style*/
 header{
+    z-index: 999;
+    transition: .3s linear;
     position: fixed;
     width: 100%;
     padding: 15px 0;
@@ -51,7 +53,7 @@ nav a:not(:last-child){
     margin-right: 2%;
 }
 header h2:hover,
-header a:hover{
+nav a:hover{
     color: #EFCFAD;
 }
 /*END Header Style*/
@@ -197,6 +199,7 @@ header a:hover{
 /*END Form section Style*/
 .form-section{
     background-color: #282829;
+    padding-bottom: 100px;
 }
 .form-box{
     background-image: url("../img/bg-building.png");
@@ -206,10 +209,10 @@ header a:hover{
     background-color: #FFFFFF;
     border-radius: 30px;
     padding: 71px 0px;
-    padding-left: 136px;
 }
 .form-box .form-wrapp{
-    max-width: 55%;
+    max-width: 45%;
+    margin-left: 71px;
 }
 .form-box .form-wrapp h3{
     font-family: Prata;
@@ -279,3 +282,75 @@ label[for="privacy_policy"]{
     width: 85%;
 }
 /*END Form section Style*/
+
+/*footer Style*/
+footer{
+    padding-bottom: 50px;
+    background-color: #222222;
+}
+.upper-footer{
+    border-top: 2px solid #D5C9BE;
+    border-bottom: 2px solid #D5C9BE;
+    text-align: center;
+    padding: 40px 0;
+}
+.upper-footer nav{
+    color: #F1F1F1;
+}
+.main-footer{
+    padding-top: 64px;
+}
+.upper-line-footer,
+.under-line-footer{
+    color: #F1F1F1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.upper-line-footer{
+    margin-bottom: 2%;
+}
+.left-footer-box,
+.right-footer-box{
+    width: -webkit-fill-available;
+}
+.right-footer-box{
+    display: flex;
+    justify-content: end;
+}
+.upper-line-footer .title-company{
+    margin: 0;
+    color: #F1F1F1;
+    transition: .3s linear;
+}
+.upper-line-footer .title-company h2:hover{
+    color: #EFCFAD;
+}
+.upper-line-footer .social-link{
+    width: -webkit-fill-available;
+    text-align: center;
+}
+.upper-line-footer .social-link a:not(:last-child){
+    margin-right: 4%;
+}
+.upper-line-footer .order-btn{
+    padding: 24px 52px;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 20px;
+}
+.under-line-footer div{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.under-line-footer a{
+    color: #A89F97;
+    transition: .3s linear;
+}
+.under-line-footer a:hover{
+    color: #EFCFAD;
+    text-decoration: underline;
+}
+/*END footer Style*/
