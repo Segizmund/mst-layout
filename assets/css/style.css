@@ -421,6 +421,7 @@ label[for="privacy_policy"]{
     color: #222222;
 }
 .box-img-women{
+    pointer-events: none;
     position: absolute;
     overflow: hidden;
     bottom: 0;
