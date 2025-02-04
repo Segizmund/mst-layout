@@ -21,6 +21,7 @@
 }
 /*Header Style*/
 header{
+    position: relative;
     z-index: 999;
     transition: .3s linear;
     position: fixed;
@@ -66,11 +67,11 @@ nav a:hover{
 .burger-menu {
     width: 40px;
     height: 30px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin-right: 2%;
+    margin-right: 15px;
+    display: none;
 }
 .line {
     width: 100%;
@@ -209,8 +210,45 @@ nav a:hover{
     }
 }
 @media screen and (max-width: 1024px){
+    .burger-menu{
+        display: flex;
+    }
+    header .title-company{
+        display: flex;
+        align-items: center;
+    }
+    .wrapp-btn-logo{
+        display: flex;
+        align-items: center;
+    }
+    .header-wrapp{
+        flex-direction: column;
+        align-items: flex-start;
+    }
     header nav{
-        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 0;
+        background-color: #191919;
+        display: flex;
+        flex-direction: column;
+        transition: .3s linear;
+        overflow: hidden;
+    }
+    header nav a{
+        padding: 15px 0px 15px 40px;
+        min-width: 100%;
+        white-space: nowrap;
+    }
+    header nav a:not(:last-child){
+        margin-bottom: 15px;
+    }
+    header nav.open{
+        width: 100%;
+    }
+    header.open{
+        background-color: #191919;
     }
 }
 @media screen and (max-width: 800px){
@@ -248,6 +286,12 @@ nav a:hover{
     }
     .head-advantages h1 {
         font-size: 28px;
+    }
+    header nav{
+        top: 40px;
+    }
+    .burger-menu{
+        width: 35px;
     }
 }
 @media screen and (max-width: 400px){
@@ -374,7 +418,7 @@ nav a:hover{
 }
 /*END Order section Style*/
 
-/*END Form section Style*/
+/*Form section Style*/
 .form-section{
     background-color: #282829;
     padding-bottom: 100px;
@@ -482,11 +526,12 @@ label[for="privacy_policy"]{
         padding-bottom: 15px;
     }
     .box-img-women {
-        right: -140px;
+        right: 0;
     }
-    .box-img-women img{
-        top: 100px;
-        width: 70%;
+    .box-img-women img {
+        top: 129px;
+        right: -115px;
+        width: 75%;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -511,14 +556,21 @@ label[for="privacy_policy"]{
     }
     .box-img-women img{
         width: 60%;
+        right: -135px;
+        top: 100px;
     }
 }
 @media screen and (max-width: 940px){
     .form-box {
-        background-position: -100px 0;
+        background-position: -15px 0;
     }
-    .box-img-women {
-        right: -270px;
+    .box-img-women img{
+        right: -215px;
+    }
+}
+@media screen and (max-width: 850px){
+    .box-img-women img {
+        right: -300px;
     }
 }
 @media screen and (max-width: 720px){
